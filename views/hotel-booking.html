@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Booking - UTP Travel</title>
+    <!-- Link to external CSS file for hotel booking styles -->
+    <link rel="stylesheet" href="/css/hotel-styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <h1>UTP Travel</h1>
+            </div>
+            <div class="tabs">
+                <a href="hotel-booking.html" class="tab active">Hotels</a>
+                <a href="train-booking.html" class="tab">Trains</a>
+                <a href="flight-booking.html" class="tab">Flights</a>
+                <a href="car-rental.html" class="tab">Car Rentals</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Search Section -->
+    <section class="search-section">
+        <div class="search-container">
+            <h2>Find Hotels</h2>
+            <input type="text" id="destination-input" placeholder="Enter your destination" class="search-input">
+            <button class="search-button" onclick="searchHotels()">Search Hotels</button>
+        </div>
+    </section>
+
+    <!-- Results Section -->
+    <section id="hotels-section" class="hotels-section">
+        <h2>Available Hotels</h2>
+        <div id="hotels-list" class="hotels-list">
+            <!-- Hotels will be dynamically loaded here -->
+        </div>
+    </section>
+
+    <!-- Link to external JavaScript file -->
+    <script src="/js/hotel-app.js"></script>
+</body>
+</html>

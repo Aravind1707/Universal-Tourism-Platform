@@ -1,0 +1,133 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+    color: #333;
+}
+
+h1, h2, h3 {
+    color: #006699;
+    margin-bottom: 10px;
+}
+
+p {
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Navigation Bar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #009959;
+    padding: 15px 50px;
+}
+
+.navbar .logo h1 {
+    color: #fff;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+    background-image: url('tokyo-hero.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-content h2 {
+    font-size: 36px;
+}
+
+.hero-content p {
+    font-size: 18px;
+}
+
+/* History Section */
+.history-section {
+    background-color: #fff;
+    padding: 50px;
+    text-align: center;
+}
+
+/* Locations Section */
+.locations-section {
+    background-color: #f0f0f0;
+    padding: 50px;
+}
+
+.locations-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.location-item {
+    background-color: #fff;
+    width: 45%;
+    margin-bottom: 30px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.location-item:hover {
+    transform: scale(1.05);
+}
+
+.location-item img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.location-item h3 {
+    margin-bottom: 10px;
+}
+
+/* Gallery Section */
+.gallery-section {
+    background-color: #fff;
+    padding: 50px;
+    text-align: center;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.gallery-grid img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+/* Footer */
+.footer {
+    background-color: #009940;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}

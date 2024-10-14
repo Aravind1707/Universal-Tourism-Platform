@@ -1,0 +1,101 @@
+/* Flight Booking Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+}
+
+.flight-header {
+    background-color: #003366;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.flight-header h1 {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.flight-form-container {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    transform: perspective(1000px) rotateX(0deg);
+    transition: transform 0.4s ease;
+}
+
+.flight-form-container:hover {
+    transform: perspective(1000px) rotateX(5deg);
+}
+
+.flight-form h2 {
+    text-align: center;
+    font-size: 26px;
+    color: #003366;
+    margin-bottom: 20px;
+}
+
+.flight-form-group {
+    margin-bottom: 20px;
+}
+
+.flight-form-group label {
+    font-weight: bold;
+    color: #333;
+}
+
+.flight-form-group input, .flight-form-group select {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-top: 5px;
+    transition: all 0.3s ease;
+}
+
+.flight-form-group input:focus, .flight-form-group select:focus {
+    border-color: #003366;
+    box-shadow: 0 0 8px rgba(0, 51, 102, 0.2);
+}
+
+.flight-button-group {
+    text-align: center;
+}
+
+.flight-button-group button {
+    padding: 15px 30px;
+    background-color: #003366;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 8px;
+    box-shadow: 0 6px 12px rgba(0, 0, 51, 0.3);
+    transition: all 0.3s ease;
+}
+
+.flight-button-group button:hover {
+    background-color: #0055cc;
+    box-shadow: 0 8px 16px rgba(0, 85, 204, 0.5);
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .flight-form-container {
+        padding: 10px;
+    }
+
+    .flight-form-group input, .flight-form-group select {
+        width: 100%;
+    }
+
+    .flight-button-group button {
+        width: 100%;
+        padding: 10px;
+    }
+}

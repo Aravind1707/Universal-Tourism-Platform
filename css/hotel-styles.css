@@ -1,0 +1,156 @@
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+}
+
+/* Navbar */
+header {
+    background-color: #007a33; /* TripAdvisor Green */
+    color: white;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo h1 {
+    font-size: 1.5rem;
+}
+
+.tabs {
+    display: flex;
+    gap: 2rem;
+}
+
+.tab {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s;
+}
+
+.tab:hover, .tab.active {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Search Section */
+.search-section {
+    background-image: url('hotel-bg.jpg'); /* Replace with an actual background image */
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-container {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+}
+
+.search-container h2 {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+
+.search-input {
+    width: 300px;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+}
+
+.search-button {
+    padding: 0.75rem 2rem;
+    background-color: #f57c00; /* Orange */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.search-button:hover {
+    background-color: #e65100; /* Darker Orange */
+}
+
+/* Hotels Section */
+.hotels-section {
+    padding: 2rem;
+}
+
+.hotels-section h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    color: #333;
+}
+
+.hotels-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.hotel-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 300px;
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.hotel-card:hover {
+    transform: scale(1.05);
+}
+
+.hotel-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.hotel-info {
+    padding: 1rem;
+    text-align: center;
+}
+
+.hotel-info h3 {
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+    color: #007a33;
+}
+
+.hotel-info p {
+    margin-bottom: 1rem;
+    color: #777;
+}
+
+.book-button {
+    padding: 0.5rem 1.5rem;
+    background-color: #007a33;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    transition: background-color 0.3s;
+}
+
+.book-button:hover {
+    background-color: #005f26;
+}

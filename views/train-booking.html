@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Train Ticket Booking</title>
+    <link rel="stylesheet" href="C:\Users\Aravind\Desktop\ALRS\utp-travel-app\css\ftc.css">
+    <style>
+        /* Basic IRCTC-style CSS */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+	
+	header {
+    	background-color: #ffffff; /* TripAdvisor Green */
+   	color: white;
+    	padding: 1rem 2rem;
+    	display: flex;
+    	justify-content: space-between;
+    	align-items: right;
+	}
+
+        .header {
+            background-color: #007a33;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+
+        .header h1 {
+            margin: 0;
+        }
+
+        .booking-form {
+            background-color: white;
+            width: 80%;
+            margin: 20px auto;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            text-align: center;
+            color: #003366;
+        }
+
+        .form-group {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            font-weight: bold;
+            width: 100%;
+        }
+
+        .form-group input,
+        .form-group select {
+            padding: 10px;
+            width: 48%;
+            margin-right: 5px;
+            box-sizing: border-box;
+        }
+
+        .form-group select {
+            width: 48%;
+        }
+
+        .button-group {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .button-group button {
+            background-color: #007a33;
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .button-group button:hover {
+            background-color: #002244;
+        }
+
+        .footer {
+            background-color: #007a33;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        .footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header Section -->
+    <header class="header">
+        <h1>IRCTC Inspired Train Booking</h1>
+<!-- Navigation Bar -->
+    <header>
+        <nav class="navbar">
+	<div class="tabs">
+                <a href="hotel-booking.html" class="tab active">Hotels</a>
+                <a href="train-booking.html" class="tab">Trains</a>
+                <a href="flight-booking.html" class="tab">Flights</a>
+                <a href="car-rental.html" class="tab">Car Rentals</a>
+            </div>
+        </nav>
+    </header>
+
+    </header>
+
+    <!-- Train Booking Form -->
+    <section class="booking-form">
+        <h2>Book Your Train Ticket</h2>
+
+        <form action="#" method="post">
+            <!-- From and To Stations -->
+            <div class="form-group">
+                <input type="text" placeholder="From Station" required>
+                <input type="text" placeholder="To Station" required>
+            </div>
+
+            <!-- Date of Journey and Return (for round trips) -->
+            <div class="form-group">
+                <input type="date" required>
+                <input type="date" placeholder="Return Date (Optional)">
+            </div>
+
+            <!-- Class and Quota -->
+            <div class="form-group">
+                <select name="class" required>
+                    <option value="">Select Class</option>
+                    <option value="sleeper">Sleeper Class (SL)</option>
+                    <option value="ac3">AC 3 Tier (3A)</option>
+                    <option value="ac2">AC 2 Tier (2A)</option>
+                    <option value="ac1">First Class AC (1A)</option>
+                    <option value="cc">Chair Car (CC)</option>
+                    <option value="ec">Executive Class (EC)</option>
+                </select>
+                
+                <select name="quota" required>
+                    <option value="">Select Quota</option>
+                    <option value="general">General Quota</option>
+                    <option value="ladies">Ladies Quota</option>
+                    <option value="tatkal">Tatkal Quota</option>
+                    <option value="premium">Premium Tatkal Quota</option>
+                    <option value="lower">Lower Berth/Sr. Citizen</option>
+                </select>
+            </div>
+
+            <!-- Passenger Details -->
+            <div class="form-group">
+                <select name="adults" required>
+                    <option value="">Adults (12+ years)</option>
+                    <option value="1">1 Adult</option>
+                    <option value="2">2 Adults</option>
+                    <option value="3">3 Adults</option>
+                    <option value="4">4 Adults</option>
+                </select>
+
+                <select name="children">
+                    <option value="">Children (5-12 years)</option>
+                    <option value="0">0 Children</option>
+                    <option value="1">1 Child</option>
+                    <option value="2">2 Children</option>
+                    <option value="3">3 Children</option>
+                </select>
+            </div>
+
+            <!-- Submit Button -->
+            <div class="button-group">
+                <button type="submit">Search Trains</button>
+            </div>
+        </form>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <p>&copy; 2024 IRCTC Inspired Train Booking. All Rights Reserved.</p>
+    </footer>
+
+</body>
+
+</html>

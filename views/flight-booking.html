@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flight Booking</title>
+    <link rel="stylesheet" href="C:\Users\Aravind\Desktop\ALRS\utp-travel-app\css\fb.css">
+    <style>
+        /* Add some basic Indigo-style CSS here */
+	header {
+   	 background-color: #007a33; /* TripAdvisor Green */
+    	color: white;
+    	padding: 1rem 2rem;
+    	display: flex;
+    	justify-content: space-between;
+    	align-items: center;
+	}
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+            margin: 0;
+            padding: 0;
+        }
+
+        .header {
+            background-color: #007a33;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+
+        .header h1 {
+            margin: 0;
+        }
+
+        .flight-search {
+            margin: 20px auto;
+            padding: 20px;
+            width: 80%;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .search-options {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+
+        .search-options label {
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        .search-options input[type="radio"] {
+            margin-right: 10px;
+        }
+
+        .search-options div {
+            display: inline-block;
+        }
+
+        .input-group {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+
+        .input-group label {
+            font-weight: bold;
+        }
+
+        .input-group input,
+        .input-group select {
+            padding: 10px;
+            width: 100%;
+            margin-right: 10px;
+        }
+
+        .input-group input[type="text"] {
+            width: 48%;
+        }
+
+        .input-group input[type="date"] {
+            width: 48%;
+        }
+
+        .search-btn {
+            text-align: center;
+        }
+
+        .search-btn button {
+            background-color: #007a33;
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .search-btn button:hover {
+            background-color: #002080;
+        }
+
+        .footer {
+            background-color: #007a33;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        .footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header Section -->
+    <header class="header">
+        <h1>Flight Booking</h1>
+    </header>
+<!-- Navigation Bar -->
+    <header>
+        <nav class="navbar">
+            <div class="tabs">
+                <a href="hotel-booking.html" class="tab active">Hotels</a>
+                <a href="train-booking.html" class="tab">Trains</a>
+                <a href="flight-booking.html" class="tab">Flights</a>
+                <a href="car-rental.html" class="tab">Car Rentals</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Flight Search Section -->
+    <section class="flight-search">
+        <h2>Search Flights</h2>
+
+        <!-- Trip Type Selection -->
+        <div class="search-options">
+            <div>
+                <label><input type="radio" name="tripType" value="oneWay" checked> One Way</label>
+            </div>
+            <div>
+                <label><input type="radio" name="tripType" value="roundTrip"> Round Trip</label>
+            </div>
+        </div>
+
+        <!-- Flight Search Form -->
+        <form action="#">
+            <!-- Departure and Arrival Locations -->
+            <div class="input-group">
+                <input type="text" placeholder="From" required>
+                <input type="text" placeholder="To" required>
+            </div>
+
+            <!-- Date of Travel and Return Date (for round trip) -->
+            <div class="input-group">
+                <input type="date" placeholder="Departure Date" required>
+                <input type="date" placeholder="Return Date">
+            </div>
+
+            <!-- Passenger and Class Selection -->
+            <div class="input-group">
+                <select name="passengers" required>
+                    <option value="">Passengers</option>
+                    <option value="1">1 Passenger</option>
+                    <option value="2">2 Passengers</option>
+                    <option value="3">3 Passengers</option>
+                    <option value="4">4 Passengers</option>
+                    <option value="5">5 Passengers</option>
+                </select>
+
+                <select name="class" required>
+                    <option value="">Class</option>
+                    <option value="economy">Economy</option>
+                    <option value="business">Business</option>
+                </select>
+            </div>
+
+            <!-- Search Button -->
+            <div class="search-btn">
+                <button type="submit">Search Flights</button>
+            </div>
+        </form>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <p>&copy; 2024 Indigo Inspired Flight Booking. All Rights Reserved.</p>
+    </footer>
+
+</body>
+
+</html>

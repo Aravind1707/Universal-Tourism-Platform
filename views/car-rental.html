@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Rental Booking</title>
+    <link rel="stylesheet" href="C:\Users\Aravind\Desktop\ALRS\utp-travel-app\css\ftc.css">
+    <style>
+        /* Basic Car Rental Style */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        .header {
+            background-color: #003366;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .navbar {
+            background-color: #003366;
+            overflow: hidden;
+        }
+
+        .navbar .tab {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        .navbar .tab:hover {
+            background-color: #002244;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 28px;
+        }
+
+        .booking-form {
+            background-color: white;
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 20px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .booking-form h2 {
+            text-align: center;
+            color: #003366;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .form-group {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            width: 100%;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .form-group input,
+        .form-group select {
+            padding: 10px;
+            width: 48%;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        .button-group {
+            text-align: center;
+        }
+
+        .button-group button {
+            padding: 15px 40px;
+            background-color: #003366;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .button-group button:hover {
+            background-color: #002244;
+        }
+
+        .footer {
+            background-color: #003366;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <a href="hotel-booking.html" class="tab">Hotels</a>
+        <a href="train-booking.html" class="tab">Trains</a>
+        <a href="flight-booking.html" class="tab">Flights</a>
+        <a href="car-rental.html" class="tab">Car Rentals</a>
+        <a href="homepage.html" class="tab">Home</a>
+    </nav>
+
+    <!-- Header Section -->
+    <header class="header">
+        <h1>Car Rental Booking</h1>
+    </header>
+
+    <!-- Car Rental Booking Form -->
+    <section class="booking-form">
+        <h2>Book Your Car Rental</h2>
+
+        <form action="#" method="post">
+            <!-- Pickup and Dropoff Locations -->
+            <div class="form-group">
+                <input type="text" placeholder="Pickup Location" required>
+                <input type="text" placeholder="Dropoff Location" required>
+            </div>
+
+            <!-- Pickup and Dropoff Dates & Times -->
+            <div class="form-group">
+                <label>Pickup Date</label>
+                <input type="date" required>
+                <label>Pickup Time</label>
+                <input type="time" required>
+            </div>
+
+            <div class="form-group">
+                <label>Dropoff Date</label>
+                <input type="date" required>
+                <label>Dropoff Time</label>
+                <input type="time" required>
+            </div>
+
+            <!-- Car Type Selection -->
+            <div class="form-group">
+                <label>Select Vehicle Type</label>
+                <select name="car-type" required>
+                    <option value="">Select Car Type</option>
+                    <option value="economy">Economy</option>
+                    <option value="suv">SUV</option>
+                    <option value="sedan">Sedan</option>
+                    <option value="luxury">Luxury</option>
+                    <option value="convertible">Convertible</option>
+                </select>
+                <select name="fuel-type" required>
+                    <option value="">Fuel Type</option>
+                    <option value="petrol">Petrol</option>
+                    <option value="diesel">Diesel</option>
+                    <option value="electric">Electric</option>
+                    <option value="hybrid">Hybrid</option>
+                </select>
+            </div>
+
+            <!-- Extras and Insurance -->
+            <div class="form-group">
+                <label>Extras</label>
+                <select name="extras">
+                    <option value="">Add Extras</option>
+                    <option value="gps">GPS Navigation</option>
+                    <option value="child-seat">Child Seat</option>
+                    <option value="additional-driver">Additional Driver</option>
+                    <option value="insurance">Insurance</option>
+                </select>
+                <select name="insurance">
+                    <option value="">Insurance Options</option>
+                    <option value="basic">Basic Coverage</option>
+                    <option value="premium">Premium Coverage</option>
+                </select>
+            </div>
+
+            <!-- Submit Button -->
+            <div class="button-group">
+                <button type="submit">Search Cars</button>
+            </div>
+        </form>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <p>&copy; 2024 Car Rental Booking. All Rights Reserved.</p>
+    </footer>
+
+</body>
+
+</html>
